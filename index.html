@@ -7,7 +7,9 @@
     <title>Vite App</title>
     <link rel="stylesheet" href="./src/style.css" />
   </head>
-  <body>
+  <body class="sm:bg-amber-300 md:bg-green-300 lg:bg-red-300 xl:bg-gray-300">
+    <!-- Breakpoints -->
+
     <div id="app">
       <!-- Text/Button Start -->
       <h1 class="bg-blue-500 text-2xl text-center text-white">Hello World!</h1>
@@ -126,8 +128,41 @@
           corrupti, fuga sequi labore quae.
         </p>
       </div>
-
       <!-- Pseudoclasses End -->
+      <hr />
+
+      <!-- Flex Start -->
+      <div class="w-100 mx-auto my-5 flex gap-3 border p-5 h-50 flex-wrap">
+        <div
+          class="bg-blue-400 w-10 h-10 flex justify-center items-center grow shrink-0 basis-1/4"
+        >
+          1
+        </div>
+        <div
+          class="bg-blue-400 w-10 h-10 flex justify-center items-center self-center grow shrink-0 basis-1/4"
+        >
+          2
+        </div>
+        <div
+          class="bg-blue-400 w-10 h-10 flex justify-center items-center self-end grow shrink-0 basis-1/4"
+        >
+          3
+        </div>
+      </div>
+      <!-- Flex End -->
+
+      <hr />
+
+      <!-- Grid Start -->
+      <div
+        class="w-100 mx-auto my-5 text-white border-1 border-black grid grid-cols-2 grid-rows-4 gap-4"
+      >
+        <div class="bg-blue-400 text-center col-span-2">Header</div>
+        <div class="bg-blue-400 text-center row-[2/4] col-start-1">Main</div>
+        <div class="bg-blue-400 text-center row-[2/4] col-start-2">Aside</div>
+        <div class="bg-blue-400 text-center col-span-2">Footer</div>
+      </div>
+      <!-- Grid End -->
     </div>
   </body>
 </html>
