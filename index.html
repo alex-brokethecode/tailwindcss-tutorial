@@ -9,25 +9,23 @@
   </head>
   <body>
     <div id="app">
-      <!-- Headers Start -->
+      <!-- Text/Button Start -->
       <h1 class="bg-blue-500 text-2xl text-center text-white">Hello World!</h1>
       <h2 class="bg-blue-700 text-xl text-center text-white">Bye bye</h2>
-      <!-- Headers End -->
 
-      <!-- Button Start -->
       <button
         class="bg-green-500 text-white p-2 mx-auto block my-3 rounded-xl w-sm hover:bg-green-600 cursor-pointer"
       >
         Submit
       </button>
-      <!-- Button End -->
+      <!-- Text/Button End -->
 
       <!-- Text with gradient color Start -->
       <div class="text-5xl font-extrabold my-5 text-center">
         <span
           class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500"
         >
-          @alex-brokethecode
+          TailwindCSS
         </span>
       </div>
       <!-- Text with gradient color End -->
@@ -35,7 +33,7 @@
       <hr />
 
       <!-- Sizes Start -->
-      <div class="bg-yellow-500 w-1/2 mx-auto h-[50px]">
+      <div class="bg-yellow-500 w-1/2 mx-auto h-[50px] my-3">
         <!-- h-screen -->
         <p class="w-40 bg-red-600 text-white h-full">This is a paragraph</p>
       </div>
@@ -79,6 +77,57 @@
         />
       </form>
       <!-- States End -->
+
+      <hr />
+
+      <!-- Pseudoclasses Start -->
+      <div class="flex flex-col justify-center gap-4 w-100 mx-auto p-5">
+        <button
+          class="bg-blue-400 w-32 p-3 rounded-md relative text-white after:content-[''] after:absolute after:left-32 after:border-8 after:border-transparent after:border-l-blue-400 after:top-4"
+        >
+          Click me!
+        </button>
+        <!-- After -->
+
+        <input
+          type="text"
+          placeholder="Username"
+          class="border rounded border-blue-500 px-2 py-2 placeholder:text-blue-400 placeholder:italic focus:outline-none focus:ring-1 focus:ring-blue-600"
+        />
+        <!-- Placeholder -->
+
+        <input
+          type="file"
+          class="file:bg-blue-400 file:border-0 file:rounded-lg file:text-white file:font-semibold file:px-3 file:py-2 hover:file:bg-blue-500"
+        />
+        <!-- File -->
+
+        <ul class="list-disc ml-6 marker:text-blue-400 marker:font-bold">
+          <li>Item</li>
+          <li>Item</li>
+          <li>Item</li>
+        </ul>
+        <!-- Marker -->
+
+        <p class="selection:bg-blue-400 selection:text-white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+          ratione accusamus deserunt consectetur cupiditate, doloribus officia
+          repudiandae natus maiores fuga harum illo praesentium necessitatibus
+          corrupti! Porro asperiores soluta explicabo vitae!
+        </p>
+        <!-- Selection -->
+
+        <p
+          class="first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:float-left"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+          magnam cupiditate, illo inventore optio voluptatem maiores maxime!
+          Officia reprehenderit omnis ab laudantium sed, culpa temporibus
+          corrupti, fuga sequi labore quae.
+        </p>
+      </div>
+
+      <!-- Pseudoclasses End -->
     </div>
   </body>
 </html>
