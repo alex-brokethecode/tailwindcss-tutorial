@@ -7,9 +7,150 @@
     <title>Vite App</title>
     <link rel="stylesheet" href="./src/style.css" />
   </head>
-  <body>
+  <body class="sm:bg-amber-300 md:bg-green-300 lg:bg-red-300 xl:bg-gray-300">
+    <!-- Breakpoints -->
+
     <div id="app">
-      <h1>Hello World!</h1>
+      <!-- Text/Button Start -->
+      <h1 class="bg-blue-500 text-2xl text-center text-white">Hello World!</h1>
+      <h2 class="bg-blue-700 text-xl text-center text-white">Bye bye</h2>
+
+      <button
+        class="bg-green-500 text-white p-2 mx-auto block my-3 rounded-xl w-sm hover:bg-green-600 cursor-pointer"
+      >
+        Submit
+      </button>
+      <!-- Text/Button End -->
+
+      <!-- Text with gradient color Start -->
+      <div class="text-5xl font-extrabold my-5 text-center">
+        <span
+          class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500"
+        >
+          TailwindCSS
+        </span>
+      </div>
+      <!-- Text with gradient color End -->
+
+      <hr />
+
+      <!-- Sizes Start -->
+      <div class="bg-yellow-500 w-1/2 mx-auto h-[50px] my-3">
+        <!-- h-screen -->
+        <p class="w-40 bg-red-600 text-white h-full">This is a paragraph</p>
+      </div>
+      <!-- Sizes End -->
+
+      <hr />
+
+      <!-- States Start -->
+      <form
+        action=""
+        class="bg-violet-100 p-10 w-[500px] mx-auto my-5 rounded-2xl"
+      >
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Username"
+          disabled
+          class="w-100 mb-4 py-2 px-4 border border-gray-500 rounded-md disabled:bg-gray-500 disabled:text-white"
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          class="w-100 py-2 px-4 border border-gray-500 rounded-md invalid:focus:border-red-700 peer"
+        />
+        <p class="text-red-400 hidden peer-invalid:block" peer>Invalid email</p>
+
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          class="w-100 mt-4 mb-4 py-2 px-4 border border-gray-500 rounded-md focus:outline-none focus:ring-1 focus:ring-green-500"
+        />
+        <input
+          type="submit"
+          value="Submit"
+          class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-3 mt-3 rounded-sm mx-auto block cursor-pointer"
+        />
+      </form>
+      <!-- States End -->
+
+      <hr />
+
+      <!-- Pseudoclasses Start -->
+      <div class="flex flex-col justify-center gap-4 w-100 mx-auto p-5">
+        <button
+          class="bg-blue-400 w-32 p-3 rounded-md relative text-white after:content-[''] after:absolute after:left-32 after:border-8 after:border-transparent after:border-l-blue-400 after:top-4"
+        >
+          Click me!
+        </button>
+        <!-- After -->
+
+        <input
+          type="text"
+          placeholder="Username"
+          class="border rounded border-blue-500 px-2 py-2 placeholder:text-blue-400 placeholder:italic focus:outline-none focus:ring-1 focus:ring-blue-600"
+        />
+        <!-- Placeholder -->
+
+        <input
+          type="file"
+          class="file:bg-blue-400 file:border-0 file:rounded-lg file:text-white file:font-semibold file:px-3 file:py-2 hover:file:bg-blue-500"
+        />
+        <!-- File -->
+
+        <ul class="list-disc ml-6 marker:text-blue-400 marker:font-bold">
+          <li>Item</li>
+          <li>Item</li>
+          <li>Item</li>
+        </ul>
+        <!-- Marker -->
+
+        <p class="selection:bg-blue-400 selection:text-white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+          ratione accusamus deserunt consectetur cupiditate, doloribus officia
+          repudiandae natus maiores fuga harum illo praesentium necessitatibus
+          corrupti! Porro asperiores soluta explicabo vitae!
+        </p>
+        <!-- Selection -->
+
+        <p
+          class="first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:float-left"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+          magnam cupiditate, illo inventore optio voluptatem maiores maxime!
+          Officia reprehenderit omnis ab laudantium sed, culpa temporibus
+          corrupti, fuga sequi labore quae.
+        </p>
+      </div>
+      <!-- Pseudoclasses End -->
+      <hr />
+
+      <!-- Flex Start -->
+      <div class="w-100 mx-auto my-5 flex gap-3 border p-5 h-50 flex-wrap">
+        <div class="square grow shrink-0 basis-1/4">1</div>
+        <div class="square self-center grow shrink-0 basis-1/4">2</div>
+        <div class="square self-end grow shrink-0 basis-1/4">3</div>
+      </div>
+      <!-- Flex End -->
+
+      <hr />
+
+      <!-- Grid Start -->
+      <div
+        class="w-100 mx-auto my-5 text-white border-1 border-black grid grid-cols-2 grid-rows-4 gap-4"
+      >
+        <div class="bg-blue-400 text-center col-span-2">Header</div>
+        <div class="bg-blue-400 text-center row-[2/4] col-start-1">Main</div>
+        <div class="bg-blue-400 text-center row-[2/4] col-start-2">Aside</div>
+        <div class="bg-blue-400 text-center col-span-2">Footer</div>
+      </div>
+      <!-- Grid End -->
     </div>
   </body>
 </html>
