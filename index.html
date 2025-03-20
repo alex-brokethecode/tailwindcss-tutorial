@@ -40,6 +40,45 @@
         <p class="w-40 bg-red-600 text-white h-full">This is a paragraph</p>
       </div>
       <!-- Sizes End -->
+
+      <hr />
+
+      <!-- States Start -->
+      <form
+        action=""
+        class="bg-violet-100 p-10 w-[500px] mx-auto my-5 rounded-2xl"
+      >
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Username"
+          disabled
+          class="w-100 mb-4 py-2 px-4 border border-gray-500 rounded-md disabled:bg-gray-500 disabled:text-white"
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          class="w-100 py-2 px-4 border border-gray-500 rounded-md invalid:focus:border-red-700 peer"
+        />
+        <p class="text-red-400 hidden peer-invalid:block" peer>Invalid email</p>
+
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          class="w-100 mt-4 mb-4 py-2 px-4 border border-gray-500 rounded-md focus:outline-none focus:ring-1 focus:ring-green-500"
+        />
+        <input
+          type="submit"
+          value="Submit"
+          class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-3 mt-3 rounded-sm mx-auto block cursor-pointer"
+        />
+      </form>
+      <!-- States End -->
     </div>
   </body>
 </html>
