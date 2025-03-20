@@ -20,6 +20,7 @@ npm run dev
 - Install TailwindCSS for Vite. Follow the [documentation](https://tailwindcss.com/docs/installation/using-vite)
 
 - Can install the `Tailwind CSS IntelliSense` plugin
+- Can use this [cheatsheet](https://www.creative-tim.com/twcomponents/cheatsheet) to have a references of classes
 
 ---
 
@@ -162,3 +163,17 @@ Button example:
 - `grid-rows-4` → Four rows
 - `col-span-2` → Spans two columns
 - `row-[2/4]` → Custom row placement
+
+## Apply
+
+Create custom classes to re-use Tailwind CSS classes
+
+```css
+.square {
+  @apply bg-blue-400 w-10 h-10 flex justify-center items-center;
+}
+```
+
+```html
+<div class="square"></div>
+```
